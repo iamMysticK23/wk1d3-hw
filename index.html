@@ -4,54 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kenai Epps">
-    <title>Grid Assignment</title>
+    <title>Grid Template - News Landing Page</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <main>
-        <div class="container">
-            <nav>
-                    <ul>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                </nav>
 
-                <div class="logo">
-                <h3>Logo<h3>
-                </div>
+    <!-- nav bar -->
+<nav>
+      <h2 class="logo">W.</h2>
+      <ul class="nav-items">
+        <li>Home</li>
+        <li>New</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+</nav>
+<main>
+<div class="container">
+  <!-- column 1 -->
+  <section id="first-column">
+    <!-- hero image -->
+    <div class="hero-image">
+    <img src="images/hero.png" alt="Hero image has multicolored shapes">
+    </div>
 
-                <div class="sidebar">
-                <p>Sidebar</p>
-                </div>
+    <!-- featured-article-title -->
+    <div class="feat-article-title">
+      <p class="feat-article-text">The Bright Future of Web 3.0</p>
+    </div>
 
-                <div class="featured-image">
-                <p>Featured Article Image</p>
-                </div>
+    <!-- article 1 -->
+    <div class="article-image">
+      <img src="images/article1.png" alt="Computer">
+      <h2 class="article-numbers">01</h2>
+      <h2 class="article-headline">Reviving Retro PC's</h2>
+      <p class="article-text">What happens when old PCs are given modern upgrades?</p>
+      </div>
+  </section>
 
-                <div class="featured-article-title">
-                <p>Featured Article Title</p>
-                </div>
+  <!-- column 2 -->
+<section>
+  <!-- featured article preview -->
+  <div class="feat-article-preview">
+    <p class="article-text">We dive into the next evolution of the web that claims to put 
+      the power of the platforms back into the hands of the people. 
+      But is it really fulfilling its promise?</p>
+      <button>READ MORE</button>
+  </div>
 
-                <div class="featured-article-preview">
-                <p>Featured Article Preview</p>
-                </div>
+      <!-- article 2 -->
+  <div class="article-image">
+     <img src="images/article2.png" alt="Computer">
+       <h2 class="article-numbers">02</h2>
+        <h2 class="article-headline">Top 10 Laptops of 2022</h2>
+        <p class="article-text">Our best picks for various needs and budgets.</p>
+  </div>
+</section>
 
-                <div class="article-1">
-                    <p>Article</p>
-                </div>
+<!-- column 3 -->
+<section> 
+  <div class="col-3-articles">
+    <div class="new-article-1">
+      <p class="new-article-1-h1">New</p>
+      <p class="new-article-1-h2">Hydrogen VS Electric Cars</p>
+      <p class="new-article-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </div>
+    <div class="new-article-2">
+      <p class="new-article-2-h2">The downsides of AI Artistry</p>
+      <p class="new-article-text">What are the possible adverse effects of on-demand AI image generation?</p>
+    </div>
+    <div class="new-article-3">
+      <p class="new-article-1-h2">Is VC Funding Drying Up?</p>
+      <p class="new-article-text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </div>
+  </div>
+  <div class="article-image">
+    <img src="images/article3.png" alt="Computer">
+      <h2 class="article-numbers">03</h2>
+       <h2 class="article-headline">The Growth of Gaming</h2>
+       <p class="article-text">How the pandemic has sparked fresh opportunities.</p>
+ </div>
 
-                <div class="article-2">
-                <p>Article</p>
-                </div>
+</section>
+</div>
 
-                <div class="article-3">
-                    <p>Article</p>
-                </div>
-        </div>
-    </main>
+
+</main>
 </body>
 </html>

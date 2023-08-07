@@ -1,141 +1,207 @@
+* {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+
+}
+
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #FFF;
 }
 
-main {
-    padding: 2em;
-    margin-top:-3em;
-    margin-bottom: 8em;
-    margin-left: 10em;
-}
-
-.container {  
-    display: grid;
-    min-height: 100vh;
-    width: 80%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr 1fr 1fr 1fr;
-    gap: 2em 2em;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "nav-bar nav-bar nav-bar"
-      "featured-image featured-image sidebar"
-      "featured-image featured-image sidebar"
-      "featured-article-title featured-article-preview sidebar"
-      "article-1 article-2 article-3";
-    padding: 4em;
-}
-  
-nav { 
-    grid-area: nav-bar; 
-    border: 2px solid black;
-    background-color: lightgrey;
-    color: black;
-    font-weight:600;
-    text-align: center;
-}
-
-nav li {
-    display: inline;
-    font-weight: 600;
-
-}
-
-nav ul {
-    width: 100%;
-    padding: 15px;
-    text-align: right;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-}
 
 
 .logo {
-    position: absolute;
-    top: 5rem;
-    left: 20rem;
+    font-size:  2.5rem;
+    color: #00001A;
+    padding: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
+nav,
+.nav-items {
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+}
 
+li {
+    list-style: none;
+ 
+
+}
+
+nav {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    justify-content: space-between;
+}
+
+.logo-section {
+    display: flex;
+
+}
+
+nav-items, li {
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: #5E607A;
+
+}
+
+.hero-image img {
+    width: 45rem;
+    margin-right: 1rem; 
+}
+
+.feat-article-title p {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.5rem;
+    color: #00001A;
+}
+
+.article-numbers  {
+    color: #C5C6CE;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+
+}
+
+.article-headline {
+    color: #00001A;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+
+.article-text {
+    color: #5E607A;
+    font-size: 1rem;
+    font-style:normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.new-article-1-h1 {
+    color: #E9AA52;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+.new-article-1-h2 {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+
+.new-article-2-h2 {
+    color: #E9AA52;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+
+.new-article-text {
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.col-3-articles {
+    background-color: #00001A;
+}
+
+button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight:700;
+    background-color: #00001A;
+    color: #FFF;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    padding: 1rem 3.5rem;
+
+}
 
 main {
-    background-color: white;
-}
-  
-
-p {
-   text-align: center;
-   color: black;
-   font-weight:600;
-}
-
-.sidebar { 
-    position:relative;
-    grid-area: sidebar; 
-    border: 2px solid green;
-    background-color: lightgrey;
+    padding: 2rem;
+    margin: 2rem 2rem;
 
 }
-  
-.featured-image { 
-    position:relative;
-    grid-area: featured-image; 
-    border: 2px solid blue;
-    background-color: lightgrey;
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr 1fr 1fr;
+    gap: 1em 2em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hero-image hero-image col-3-articles"
+      "hero-image hero-image col-3-articles"
+      "feat-article-title feat-article-text col-3-articles"
+      "article-image article-image article-image";
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
-  
-.featured-article-title { 
-    position:relative;
-    grid-area: featured-article-title; 
-    border: 2px solid orange;
-    background-color: lightgrey;
+
+.col-3-articles {
+    position: relative;
+    grid-area: col-3-articles;
+    padding: 1rem;
 }
-  
-.featured-article-preview { 
-    grid-area: featured-article-preview; 
-    border: 2px solid purple;
-    background-color: lightgrey;
+
+.new-article-1-h1 {
+    padding-bottom: 2rem;
+}
+
+.new-article-1-h2 {
+    padding-bottom: 2rem;
+}
+
+.new-article-2-h2 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.new-article-text {
+    padding-bottom: 2rem;
+}
+
+.article-image {
+    position: relatice;
+    grid-area: col-3-articles;
+    align-content: center;
+    justify-content: center;
+}
+
+.hero-image {
+    position: relative;
+    grid-area: hero-image;
 
 }
-  
-.article-1 {
-     position:relative;
-     grid-area: article-1; 
-     border: 2px solid red;
-     background-color: lightgrey;
-}
-  
-.article-2 { 
-    position:relative;
-    grid-area: article-2; 
-    border: 2px solid red;
-    background-color: lightgrey;
-}
-  
-.article-3 { 
-    position:relative;
-    grid-area: article-3; 
-    border: 2px solid red;
-    background-color: lightgrey;
 
+.feat-article-title {
+    position: relative;
+    grid-area: feat-article-title;
 }
-@media only screen and (max-width: 600px){
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, 1fr);
-        grid-template-areas:
-            "nav-bar"
-            "featured-image"
-            "featured-article-title"
-            "featured-article-preview"
-            "sidebar"
-            "article-1"
-            "article-2"
-            "article-3"
 
-    }
+.feat-article-preview {
+    grid-area: feat-article-preview;
+    justify-content: center;
+    align-items: center;
 }
